@@ -1,0 +1,17 @@
+span {
+    color: white;
+    background-color: black;
+  }
+
+  .redColor {
+    color: red;
+    background-color: white;
+    font-family: arial;
+    font-size: 24px;
+  }
+
+  #pageLink {
+    color: green;
+    font-family: arial;
+    font-size: 18px;
+  }
