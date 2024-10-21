@@ -9,7 +9,7 @@
 
 </head>
 <script>
-    function checkboxes()
+    function textboxes()
     {
         var fullName = document.getElementById("name").value;
         var email = document.getElementById("email").value;
@@ -24,17 +24,21 @@
         document.getElementById("email").focus();
     }
     }
+    function noTermAgreement()
+    {
+        window.alert("You haven't agreed to the Terms of Agreement");
+    }
 </script>
 <body>
     <form action="nextPage.html" type="Post">
         <span>Name (First and Last): <input type="text" id="name"><br>
         Email: <input type="text" id="email"><br>
         <h3>Do you accept the terms and conditions?</h3></span>
-        <div><input type="radio" name="answer" value="yes" onclick='checkboxes();'>Yes<br>
-        <input type="radio" name="answer" value="no" onclick='checkboxes();'>No<br>
+        <div><input type="radio" name="answer" value="yes" onclick='textboxes();'>Yes<br>
+        <input type="radio" name="answer" value="no" onclick='textboxes();'>No<br>
         <br />
-<a href="homepage.html" id="pageLink" target="_new">Go Back To My Home Page</a>
+<a href="homepage.html" id="pageLink" target="_new" onclick='noTermAgreement();'>Go Back To My Home Page</a>
 <br />
-<a href="secondpage.html" id="pageLink" target="_new">Go To My Second Page</a></div>
+<a href="secondpage.html" id="pageLink" target="_new" onclick='noTermAgreement();'>Go To My Second Page</a></div>
 </body>
 </html>
